@@ -1,0 +1,25 @@
+{
+	"name": "test",
+	"version": "1.0.0",
+	"description": "mern-stack serching prime number test",
+	"main": "server.js",
+	"author": "Aditya Gyawali",
+	"license": "MIT",
+	"scripts": {
+		"client-install": "cd client && yarn",
+		"server": "nodemon server.js",
+		"client": "cd client && yarn start",
+		"dev": "concurrently \"yarn run server\" \"yarn run client\""
+	},
+	"dependencies": {
+		"body-parser": "^1.18.3",
+		"concurrently": "^4.1.0",
+		"cors": "^2.8.5",
+		"express": "^4.16.4",
+		"mongoose": "^5.4.1",
+		"redux-thunk": "^2.3.0"
+	},
+	"devDependencies": {
+		"nodemon": "^1.18.9"
+	}
+}

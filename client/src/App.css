@@ -1,0 +1,94 @@
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	animation: App-logo-spin infinite 20s linear;
+	height: 40vmin;
+}
+
+h3 {
+	margin-bottom: 10%;
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+.table__delete {
+	height: 40px;
+	margin-left: 20px;
+	border-radius: 4px;
+	background-color: rgb(236, 88, 88);
+	color: rgb(238, 227, 227);
+	outline: none;
+
+	font-size: 14px;
+	margin-bottom: 5%;
+}
+
+.table__data {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 30%;
+	margin: auto;
+}
+
+.table__data td,
+.table__data th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+.table__data__button {
+	background: rgb(219, 82, 82);
+	color: white;
+}
+
+.table__data tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.table__data tr:hover {
+	background-color: #ddd;
+}
+
+.table__data th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #4caf50;
+	color: white;
+}
+
+::placeholder {
+	font-size: 16px;
+	color: #4caf50;
+}
+
+.prime-input:invalid {
+	color: red;
+}
+.prime-input:valid {
+	color: green;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
