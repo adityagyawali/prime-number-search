@@ -2,21 +2,8 @@ import * as type from "./actionTypes";
 import { findPrimeNum } from "../helper";
 import axios from "axios";
 
-// type LoadingAction = {
-// 	type: type.LOADING,
-// 	loading: boolean
-// };
 
-// type GetState = () => State;
-// type PromiseAction = Promise<Action>;
-// type ThunkAction = (dispatch: Dispatch, getState: GetState) => any;
-// type Dispatch = (
-// 	action: Action | ThunkAction | PromiseAction | Array<Action>
-// ) => any;
-
-// type Action = LoadingAction;
-
-export const getAllData = (): ThunkAction => dispatch => {
+export const getAllData = () => dispatch => {
 	dispatch(setLoading());
 	axios
 		.get(
