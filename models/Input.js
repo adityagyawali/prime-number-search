@@ -1,20 +1,20 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
-const Schema = mongoose.Schema;
+const { Schema } = mongoose;
 
-//Create Input Schema
+// Create Input Schema
 const InputSchema = new Schema({
-	inputNum: {
-		type: String,
-		required: true
-	},
-	foundNum: {
-		type: String
-	},
-	Date: {
-		type: Date,
-		default: Date.now()
-	}
+  inputNum: {
+    type: String,
+    required: true,
+  },
+  foundNum: {
+    type: String,
+  },
+  Date: {
+    type: Date,
+    default: Date.now(),
+  },
 });
 
-module.exports = mongoose.model("input", InputSchema);
+module.exports = mongoose.model('input', InputSchema);

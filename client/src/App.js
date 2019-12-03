@@ -15,7 +15,7 @@ import loader from "./assets/loader.svg";
 import { validate } from "./helper";
 import "./App.css";
 
-class App extends React.Component<Props, State> {
+class App extends React.Component {
 	state = {
 		num: "",
 		touched: {
@@ -68,8 +68,8 @@ class App extends React.Component<Props, State> {
 		const table = loading ? (
 			<img src={loader} alt="loading" />
 		) : (
-			<Table data={found} handleDelete={this.handleDelete} />
-		);
+				<Table data={found} handleDelete={this.handleDelete} />
+			);
 		return (
 			<div className="App">
 				<h3 className="App__header">Prime Number Search</h3>

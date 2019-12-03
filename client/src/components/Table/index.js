@@ -7,37 +7,37 @@ const Table = ({ data, handleDelete }) => {
 		data.length === 0 || data === (null || undefined) ? (
 			<h3 style={{ textAlign: "center" }}>Start The Search</h3>
 		) : (
-			<>
-				<table className="table__data">
-					<thead>
-						<tr>
-							<th>Input Number</th>
-							<th>Result</th>
-							<th>Date</th>
-						</tr>
-					</thead>
-					<tbody>
-						{data.map((num, i) => (
-							<tr key={i}>
-								<td>{num.inputNum}</td>
-								<td>
-									{num.foundNum === (null || undefined)
-										? "Number Not Found"
-										: num.foundNum}
-								</td>
-
-								<td>
-									<Moment format="YYYY/MM/DD">{num.Date}</Moment>
-								</td>
+				<>
+					<table className="table__data">
+						<thead>
+							<tr>
+								<th>Input Number</th>
+								<th>Result</th>
+								<th>Date</th>
 							</tr>
-						))}
-					</tbody>
-				</table>
-				<button className="table__delete" onClick={handleDelete}>
-					Delete All
+						</thead>
+						<tbody>
+							{data.map((num, i) => (
+								<tr key={i}>
+									<td>{num.inputNum}</td>
+									<td>
+										{num.foundNum === (null || undefined)
+											? "Number Not Found"
+											: num.foundNum}
+									</td>
+
+									<td>
+										<Moment format="YYYY/MM/DD">{num.Date}</Moment>
+									</td>
+								</tr>
+							))}
+						</tbody>
+					</table>
+					<button className="table__delete" onClick={handleDelete}>
+						Delete All
 				</button>
-			</>
-		);
+				</>
+			);
 	return (
 		<>
 			<div className="table">{searchResult}</div>
